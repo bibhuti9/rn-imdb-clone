@@ -1,9 +1,7 @@
 import React from 'react';
 import {DrawerActions} from '@react-navigation/native';
 import {NavigationContainerRef} from '@react-navigation/native';
-import auth from '@react-native-firebase/auth';
-import {setGlobalAlert} from '@store/Device/dispatch';
-import {Route} from '@navigators/index';
+import { Route } from '@navigators/index';
 
 type RootParamList = {
   // Define the types of your root navigation screens here
@@ -16,16 +14,10 @@ export const currentNavigationRef =
 interface NavigationProps {
   screenName: any;
   params?;
-  checkAuth?: boolean;
 }
 
-export function push({screenName, params, checkAuth = false}: NavigationProps) {
-  const user = auth().currentUser;
-  if (checkAuth && !user) {
-    console.log('** Check User Auth **');
-    return setGlobalAlert(true);
-  }
-  navigationRef.current?.navigate(screenName, params);
+export function push({screenName, params}: NavigationProps) {
+  navigationRef.current?.navigate(screenName, params);  
 }
 export function pop() {
   navigationRef.current?.goBack();
