@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-
+import Icon from 'react-native-vector-icons/Feather';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -17,6 +17,7 @@ export default function App() {
     return (
       <View>
         <Text>Home</Text>
+        <Icon name="plus" />
       </View>
     );
   };
