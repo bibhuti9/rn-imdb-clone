@@ -1,3 +1,12 @@
+## Features
+
+### Fetch movies from API
+### Search movies
+### Favorite your movies
+### Light and Dark mode
+### State management using Mobx
+### Compatiable for both IOS and Android
+
 ## Imdb Clone
 
 <img width="449" height="800" alt="Screenshot 2024-02-11 at 6 18 17 PM" src="https://github.com/bibhuti9/rn-imdb-clone/assets/36328136/18a9ce06-586f-4322-ae19-84e2ae171e28">
