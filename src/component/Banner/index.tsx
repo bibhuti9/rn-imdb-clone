@@ -8,6 +8,8 @@ import {_Shrink} from '@utils/string';
 import {useTheme} from '@rneui/themed';
 import ButtonIcon from '@component/ButtonIcon';
 import Typography from '@component/typography';
+import {push} from '@utils/navigation';
+import {Route} from '@navigators/index';
 
 interface PropsTypes {
   item: MovieTypes;
@@ -16,6 +18,9 @@ interface PropsTypes {
 export default function Banner({item}: PropsTypes) {
   const styles = useStyle();
   const {theme} = useTheme();
+  const onPress = () => {
+    push({screenName: Route.MovieDetails, params: item.id});
+  };
   return (
     <View style={styles.container}>
       <FastImage
@@ -26,12 +31,13 @@ export default function Banner({item}: PropsTypes) {
       </FastImage>
       <View style={styles.bottomContainer}>
         <ButtonIcon
+          onAction={onPress}
           iconName="controller-play"
           iconColor={theme.colors.white}
           containerStyle={styles.playBtn}>
           <Typography color={theme.colors.white}>Play</Typography>
         </ButtonIcon>
-        <ButtonIcon containerStyle={styles.outlineButton}>
+        <ButtonIcon containerStyle={styles.outlineButton} onAction={onPress}>
           <Typography>Details</Typography>
         </ButtonIcon>
       </View>

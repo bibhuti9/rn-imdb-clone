@@ -1,17 +1,25 @@
 import React from 'react';
-import {ScrollView, View} from 'react-native';
+import {ActivityIndicator, ScrollView, View} from 'react-native';
 import HomeTopBanner from './component/TopBanner';
 import LatestMovie from './component/LatestMovie';
 import PoluparMovie from './component/PopularMovies';
+import {observer} from 'mobx-react';
+import {getLoader} from '@store/Device/dispatch';
 
-export default function Home() {
+function Home() {
+  const loader = getLoader();
   return (
     <ScrollView>
-      <View>
-        <HomeTopBanner />
-        <LatestMovie />
-        <PoluparMovie />
-      </View>
+      {loader ? (
+        <ActivityIndicator />
+      ) : (
+        <View>
+          <HomeTopBanner />
+          <LatestMovie />
+          <PoluparMovie />
+        </View>
+      )}
     </ScrollView>
   );
 }
+export default observer(Home);

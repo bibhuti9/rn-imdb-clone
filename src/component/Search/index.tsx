@@ -23,6 +23,7 @@ export default function Search({onSearch}: PropsTypes) {
         <TextInput
           onChangeText={onSearch}
           style={styles.textInput}
+          placeholderTextColor={theme.colors.black}
           placeholder="Search any movie name"
         />
       </View>

@@ -10,6 +10,7 @@ import {movieStore, movieSnapShot, MovieType} from './Movies';
 import {moviesAction} from './Movies/action';
 import {widhListStore, wishListStoreStoreType} from './Wishlist';
 import {wishListAction} from './Wishlist/action';
+import {loaderAction} from './Device/action';
 
 export const Store = types
   .model('rootStore', {
@@ -21,6 +22,7 @@ export const Store = types
   .actions(AuthStateAction)
   .actions(moviesAction)
   .actions(wishListAction)
+  .actions(loaderAction)
   .actions(store => ({
     movie(movieId: string): movieSnapShot | undefined {
       return store.movies.get(movieId);

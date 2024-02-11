@@ -2,8 +2,9 @@ import React from 'react';
 import Sliders from '@component/Slider';
 import {useLatestMovies} from '@screens/Home/controller';
 import {movieStoreType} from '@store/Movies';
+import {observer} from 'mobx-react';
 
-export default function LatestMovie() {
+function LatestMovie() {
   const latestMovies: movieStoreType[] = useLatestMovies();
   return (
     <Sliders
@@ -14,3 +15,4 @@ export default function LatestMovie() {
     />
   );
 }
+export default observer(LatestMovie);
