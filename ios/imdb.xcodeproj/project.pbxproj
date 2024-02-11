@@ -33,6 +33,8 @@
 		C24407432B77769100724807 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C24407302B77769100724807 /* SimpleLineIcons.ttf */; };
 		C24407442B77769100724807 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C24407312B77769100724807 /* FontAwesome6_Brands.ttf */; };
 		C24407452B77769100724807 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C24407322B77769100724807 /* MaterialIcons.ttf */; };
+		32FFEA81EBD54520BFB81E17 /* KaushanScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6E1559FE5648EBAB0D8AF3 /* KaushanScript-Regular.ttf */; };
+		D40F58F9E8BA4719B73473C5 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD5EEC574A41F09B11C125 /* Poppins-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		C24407312B77769100724807 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
 		C24407322B77769100724807 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		3A6E1559FE5648EBAB0D8AF3 /* KaushanScript-Regular.ttf */ = {isa = PBXFileReference; name = "KaushanScript-Regular.ttf"; path = "../assets/fonts/KaushanScript-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6ECD5EEC574A41F09B11C125 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				284F5678B3A5435E82565BB7 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -213,6 +218,16 @@
 			name = Fonts;
 			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
+		};
+		284F5678B3A5435E82565BB7 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				3A6E1559FE5648EBAB0D8AF3 /* KaushanScript-Regular.ttf */,
+				6ECD5EEC574A41F09B11C125 /* Poppins-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -329,6 +344,8 @@
 				C24407422B77769100724807 /* FontAwesome6_Solid.ttf in Resources */,
 				C24407362B77769100724807 /* FontAwesome6_Regular.ttf in Resources */,
 				C24407452B77769100724807 /* MaterialIcons.ttf in Resources */,
+				32FFEA81EBD54520BFB81E17 /* KaushanScript-Regular.ttf in Resources */,
+				D40F58F9E8BA4719B73473C5 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

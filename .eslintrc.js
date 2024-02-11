@@ -9,5 +9,6 @@ module.exports = {
     'react/no-unstable-nested-components': 0,
     'react-native/no-inline-styles': 0,
     'eol-last': 0,
+    quotes: 0,
   },
 };

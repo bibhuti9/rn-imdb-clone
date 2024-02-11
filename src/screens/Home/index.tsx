@@ -1,10 +1,13 @@
-import {View, Text} from 'react-native';
+import {SafeAreaView, View} from 'react-native';
 import React from 'react';
+import HomeTopBanner from './component/TopBanner';
 
 export default function Home() {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView>
+      <View>
+        <HomeTopBanner />
+      </View>
+    </SafeAreaView>
   );
 }
