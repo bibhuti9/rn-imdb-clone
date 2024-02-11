@@ -1,10 +1,16 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import Sliders from '@component/Slider';
+import {useLatestMovies} from '@screens/Home/controller';
+import {movieStoreType} from '@store/Movies';
 
 export default function LatestMovie() {
+  const latestMovies: movieStoreType[] = useLatestMovies();
   return (
-    <View>
-      <Text>LatestMovie</Text>
-    </View>
+    <Sliders
+      labelText="Browse Trailers and Videos"
+      onLabelpress={() => {}}
+      heading="Latest Movies"
+      list={latestMovies}
+    />
   );
 }

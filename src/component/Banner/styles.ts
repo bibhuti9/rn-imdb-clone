@@ -1,29 +1,38 @@
-import {Font} from '@component/typography/types';
 import {makeStyles} from '@rneui/themed';
-import {sizes} from '@theme/colors';
+import {Font, sizes} from '@theme/colors';
 export const useStyle = makeStyles(theme => ({
   container: {
-    height: sizes.height / 2.2,
+    height: sizes.height / 2,
     width: sizes.width,
   },
   imageBackground: {
-    flex: 0.6,
+    flex: 1,
     width: sizes.width,
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center',
+    paddingBottom: sizes.padding + 10,
   },
   playBtn: {
-    height: 60,
-    width: 60,
-    borderRadius: 50,
+    backgroundColor: theme.colors.grey5,
+    paddingVertical: theme.spacing.md,
+    paddingHorizontal: theme.spacing.lg,
+    borderRadius: 30,
+  },
+  outlineButton: {
+    paddingVertical: theme.spacing.md,
+    paddingHorizontal: theme.spacing.xl,
+    borderRadius: 30,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 4,
+    borderWidth: 2,
     borderColor: theme.colors.black,
+    marginLeft: theme.spacing.lg,
   },
   bottomContainer: {
     flexDirection: 'row',
-    flex: 0.25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: theme.spacing.xl,
   },
   leftBottomContainer: {
     flex: 1,
@@ -40,9 +49,9 @@ export const useStyle = makeStyles(theme => ({
     flex: 1.1,
   },
   text: {
-    color: theme.colors.secondary,
-    fontSize: sizes.L,
-    fontFamily: 'KaushanScript-Regular',
+    color: theme.colors.black,
+    fontSize: sizes.XL,
+    fontFamily: Font.KaushanScriptRegular,
     textShadowColor: theme.colors.secondary,
     textShadowOffset: {
       height: 0,
@@ -50,5 +59,6 @@ export const useStyle = makeStyles(theme => ({
     },
     textShadowRadius: 10,
     letterSpacing: 2,
+    textAlign: 'center',
   },
 }));

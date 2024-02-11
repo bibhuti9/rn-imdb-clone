@@ -5,7 +5,7 @@ const {width, height} = Dimensions.get('screen');
 
 export const ASPECT_RATIO = width / 360;
 
-export enum Font {  
+export enum Font {
   'PoppinsRegular' = 'Poppins-Regular',
   'KaushanScriptRegular' = 'KaushanScript-Regular',
 }
@@ -123,7 +123,7 @@ export type participantsDataProps = {
 
 export const Spacing = {
   s: 4 * ASPECT_RATIO,
-  m: 16 * ASPECT_RATIO,
+  m: 26 * ASPECT_RATIO,
   lg: 18 * ASPECT_RATIO,
   xl: 32 * ASPECT_RATIO,
   xxl: 48 * ASPECT_RATIO,

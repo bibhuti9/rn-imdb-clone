@@ -46,7 +46,7 @@ export const movies = [
     cast: 'Marlon Brando, Al Pacino, James Caan, Diane Keaton',
     movieDesc:
       'Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.',
-    type: ['Latest'],
+    type: ['Banner', 'Featured'],
     tag: 'The Best Movies and Series to Watch in October',
   },
   {
@@ -63,7 +63,7 @@ export const movies = [
     cast: 'Marlon Brando, Al Pacino, James Caan, Diane Keaton',
     movieDesc:
       'Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.',
-    type: ['Banner'],
+    type: ['Banner', 'Featured'],
     tag: 'The Best Movies and Series to Watch in October',
   },
 
@@ -115,7 +115,7 @@ export const movies = [
     cast: 'Marlon Brando, Al Pacino, James Caan, Diane Keaton',
     movieDesc:
       'Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.',
-    type: ['Latest', 'Banner'],
+    type: ['Latest', 'Banner', 'Featured'],
     tag: 'The Best Movies and Series to Watch in October',
   },
   {
@@ -132,11 +132,11 @@ export const movies = [
     cast: 'Marlon Brando, Al Pacino, James Caan, Diane Keaton',
     movieDesc:
       'Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.',
-    type: ['Latest', 'Banner'],
+    type: ['Latest', 'Banner', 'Featured'],
     tag: 'The Best Movies and Series to Watch in October',
   },
   {
-    id: 1,
+    id: '09sdf-0s9d-f0',
     name: 'Ram Setu',
     backImage:
       'https://firebasestorage.googleapis.com/v0/b/foody-bef0b.appspot.com/o/demo%2Framsetubanner.png?alt=media&token=a4f6a02a-f794-4d4a-a532-1fdb393533df',
@@ -153,8 +153,8 @@ export const movies = [
     tag: 'The Best Movies and Series to Watch in October',
   },
   {
-    id: 's6d7fs5d7f809',
-    name: 'Godfather',
+    id: '76s5df76sd576f7sdf',
+    name: 'God father',
     backImage:
       'https://firebasestorage.googleapis.com/v0/b/foody-bef0b.appspot.com/o/demo%2FgodFatherBack.png?alt=media&token=1868e584-83e8-44ed-8f6c-4ed149e37208',
     fontImage:
@@ -183,7 +183,7 @@ export const movies = [
     cast: 'Alia Bhatt, Ranbir Kapoor',
     movieDesc:
       "The stars of 'Brahmastra Part One: Shiva' reveal when they first became fans of each other's work, how this film became a part of their DNA, and why their director won't tell them all the plot points in the forthcoming sequel.",
-    type: ['Latest', 'Banner'],
+    type: ['Latest', 'Banner', 'Featured'],
     tag: 'The Best Movies and Series to Watch',
   },
   {
