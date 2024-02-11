@@ -13,6 +13,7 @@ import {push} from '@utils/navigation';
 import Favorite from '@screens/Favorite';
 import SearchScreen from '@screens/Search';
 import ProfileScreen from '@screens/Profile';
+import SearchStack from '@navigators/Stack/SearchStack';
 
 const BottomStack = createBottomTabNavigator();
 
@@ -90,7 +91,7 @@ export default function BottomNavigators() {
       <BottomStack.Screen name={Route.HomeBottomTab} component={HomeStack} />
       <BottomStack.Screen
         name={Route.SearchBottomTab}
-        component={SearchScreen}
+        component={SearchStack}
       />
       <BottomStack.Screen name={Route.FavoriteBottomTab} component={Favorite} />
       <BottomStack.Screen

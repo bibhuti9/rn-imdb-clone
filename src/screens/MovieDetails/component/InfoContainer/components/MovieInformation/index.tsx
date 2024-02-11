@@ -11,7 +11,7 @@ const MovieInformation = ({movie}: PropsTypes) => {
   return (
     <View style={styles.reviewContainer}>
       {info.map((el, _) => (
-        <View style={styles.reviewContainer}>
+        <View style={styles.reviewContainer} key={String(_)}>
           <Typography>{el}</Typography>
           {_ !== info.length && <View style={styles.seperator} />}
         </View>

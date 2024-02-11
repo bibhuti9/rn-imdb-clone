@@ -6,6 +6,7 @@ export enum Route {
 
   HomeScreen = 'HomeScreen',
   MovieDetails = 'MovieDetails',
+  SearchScreen = 'SearchScreen',
 }
 
 export const BottomTabs = {

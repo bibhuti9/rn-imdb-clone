@@ -7,11 +7,9 @@ import {movies} from '@reference/index';
 
 export default function SplashScreen() {
   useEffect(() => {
-    setTimeout(() => {
-      Splash.hide();
-      store.addMovies(movies);
-      return changeAuthState(1);
-    }, 3000);
+    Splash.hide();
+    store.addMovies(movies);
+    return changeAuthState(1);
   }, []);
   return <></>;
 }

@@ -7,9 +7,17 @@ import ButtonIcon from '@component/ButtonIcon';
 import {pop} from '@utils/navigation';
 import Typography from '@component/typography';
 import Review from '@component/Review';
+import {store} from '@store/index';
+import {observer} from 'mobx-react';
+import Heart from '@component/Heart';
+import {addToWishList} from '@store/Wishlist/dispatch';
 
-export default function TopContainer({movie}: {movie: movieStoreType}) {
+function TopContainer({movie}: {movie: movieStoreType}) {
+  const hasWishList: boolean = store.wishList.has(movie.id);
   const styles = useStyle();
+  const onFavorite = () => {
+    addToWishList(movie.id);
+  };
   return (
     <View style={styles.topContainer}>
       <FastImage source={{uri: movie.backImage}} style={styles.imageBackground}>
@@ -20,6 +28,7 @@ export default function TopContainer({movie}: {movie: movieStoreType}) {
             iconProps={{size: 30}}
             onAction={pop}
           />
+          <Heart onPress={onFavorite} hasFavorite={hasWishList} />
         </View>
         <View style={{flex: 1, flexDirection: 'row'}}>
           <View style={styles.leftBottomContainer}></View>
@@ -39,3 +48,4 @@ export default function TopContainer({movie}: {movie: movieStoreType}) {
     </View>
   );
 }
+export default observer(TopContainer);
