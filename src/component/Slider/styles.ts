@@ -9,7 +9,8 @@ export const useStyle = makeStyles(theme => ({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: theme.spacing.xl,
+    marginTop: 30,
+    marginBottom: 5,
   },
   heading: {
     fontSize: typo.L,

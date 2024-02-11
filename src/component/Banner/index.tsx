@@ -27,9 +27,9 @@ export default function Banner({item}: PropsTypes) {
       <View style={styles.bottomContainer}>
         <ButtonIcon
           iconName="controller-play"
-          iconColor={theme.colors.black}
+          iconColor={theme.colors.white}
           containerStyle={styles.playBtn}>
-          <Typography>Play</Typography>
+          <Typography color={theme.colors.white}>Play</Typography>
         </ButtonIcon>
         <ButtonIcon containerStyle={styles.outlineButton}>
           <Typography>Details</Typography>

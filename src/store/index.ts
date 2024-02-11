@@ -17,6 +17,11 @@ export const Store = types
   })
   .actions(AuthStateAction)
   .actions(moviesAction)
+  .actions(store => ({
+    movie(movieId: string): movieSnapShot | undefined {
+      return store.movies.get(movieId);
+    },
+  }))
   .views(store => ({
     get loaders(): boolean {
       return store.device.status;

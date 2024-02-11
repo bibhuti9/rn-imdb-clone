@@ -13,13 +13,13 @@ export const useStyle = makeStyles(theme => ({
     paddingBottom: sizes.padding + 10,
   },
   playBtn: {
-    backgroundColor: theme.colors.grey5,
+    backgroundColor: theme.colors.black,
     paddingVertical: theme.spacing.md,
     paddingHorizontal: theme.spacing.lg,
     borderRadius: 30,
   },
   outlineButton: {
-    paddingVertical: theme.spacing.md,
+    paddingVertical: theme.spacing.md - 2,
     paddingHorizontal: theme.spacing.xl,
     borderRadius: 30,
     justifyContent: 'center',
@@ -32,7 +32,7 @@ export const useStyle = makeStyles(theme => ({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: theme.spacing.xl,
+    marginTop: theme.spacing.md + 5,
   },
   leftBottomContainer: {
     flex: 1,
@@ -49,10 +49,10 @@ export const useStyle = makeStyles(theme => ({
     flex: 1.1,
   },
   text: {
-    color: theme.colors.black,
+    color: '#fff',
     fontSize: sizes.XL,
     fontFamily: Font.KaushanScriptRegular,
-    textShadowColor: theme.colors.secondary,
+    textShadowColor: theme.colors.black,
     textShadowOffset: {
       height: 0,
       width: 0,
